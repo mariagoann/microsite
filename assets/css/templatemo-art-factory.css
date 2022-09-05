@@ -840,7 +840,7 @@ about
 */
 
 #about {
-  padding: 120px 0px;
+  padding: 100px 0px; /*120px 0px*/
   border-bottom: 1px solid #eee;
 }
 
@@ -859,7 +859,8 @@ about
 }
 
 #about2 {
-  padding: 120px 0px;
+  padding: 100px 0px; /*120px 0px*/
+  border-bottom: 1px solid #eee;
 }
 
 #about2 .right-image {
@@ -908,8 +909,8 @@ services
 */
 #services {
   position: relative;
-  padding: 120px 0px 90px 0px;
-  background: rgba(0, 136, 232, 1);
+  padding: 100px 0px 90px 0px; /* 120px 0px 90px 0px*/
+  /*background: rgba(0, 136, 232, 1);
   background: -moz-linear-gradient(
     -45deg,
     rgba(0, 136, 232, 1) 0%,
@@ -946,7 +947,7 @@ services
     rgba(0, 136, 232, 1) 0%,
     rgba(0, 182, 198, 1) 0%,
     rgba(0, 136, 232, 1) 100%
-  );
+  );*/
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088e8', endColorstr='#0088e8', GradientType=1 );
 }
 
@@ -1095,7 +1096,7 @@ accordions
 */
 
 #frequently-question {
-  padding: 120px 0px;
+  padding: 100px 0px; /*120px 0px*/
 }
 
 #frequently-question .section-heading p {
