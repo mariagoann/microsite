@@ -840,7 +840,7 @@ about
 */
 
 #about {
-  padding: 100px 0px; /*120px 0px*/
+  padding: 60px 0px; /*120px 0px*/
   border-bottom: 1px solid #eee;
 }
 
@@ -854,12 +854,14 @@ about
   align-self: center;
 }
 
-#about .right-text p {
+/*uncomment thi section 
+if using right-text*/
+/* #about .right-text p {
   margin-bottom: 40px;
-}
+} */
 
 #about2 {
-  padding: 100px 0px; /*120px 0px*/
+  padding: 60px 0px; /*120px 0px*/
   border-bottom: 1px solid #eee;
 }
 
@@ -869,7 +871,7 @@ about
 
 #about h5,
 #about2 h5 {
-  font-size: 26px;
+  font-size: 26px; /*26px*/
   font-weight: 700;
   color: #1e1e1e;
   line-height: 40px;
@@ -880,20 +882,26 @@ about
 #about p,
 #about2 p {
   margin-bottom: 30px;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 16px; /*16px*/
+  line-height: 29px; /*30px*/
   letter-spacing: 0.5px;
 }
 
+/*added*/
+#about ul li img,
 #about2 ul li img {
   display: inline;
   float: left;
 }
 
+/*added*/
+#about ul li .text,
 #about2 ul li .text {
   margin-left: 80px;
 }
 
+/*added*/
+#about ul li .text h6,
 #about2 ul li .text h6 {
   padding-top: 12px;
   font-size: 21px;
@@ -909,7 +917,7 @@ services
 */
 #services {
   position: relative;
-  padding: 100px 0px 90px 0px; /* 120px 0px 90px 0px*/
+  padding: 60px 0px 60px 0px; /* 120px 0px 90px 0px*/
   /*background: rgba(0, 136, 232, 1);
   background: -moz-linear-gradient(
     -45deg,
@@ -1096,7 +1104,7 @@ accordions
 */
 
 #frequently-question {
-  padding: 100px 0px; /*120px 0px*/
+  padding: 60px 0px; /*120px 0px*/
 }
 
 #frequently-question .section-heading p {
@@ -1137,11 +1145,17 @@ accordions
 @media (max-width: 765px) {
   #frequently-question .left-text {
     margin-bottom: 60px;
+    /*addition*/
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
 .accordions {
   background-color: #f7f7f7;
+  /*addition*/
+  margin-right: 15px;
+  margin-left: 15px;
 }
 .accordion-head {
   padding: 20px;
@@ -1220,7 +1234,8 @@ contact
 }
 
 .contact-form {
-  padding: 100px;
+  height: auto;
+  padding: 20px; /*100px*/
   background: rgba(0, 136, 232, 1);
   background: -moz-linear-gradient(
     -45deg,
@@ -1264,8 +1279,9 @@ contact
 
 @media (max-width: 765px) {
   .contact-form {
-    padding: 60px;
+    padding: 40px; /*60px*/
     margin-top: -7px;
+    height: auto; /*addition*/
   }
 }
 
@@ -1293,7 +1309,7 @@ contact
 }
 
 .contact-form {
-  text-align: center;
+  text-align: left;
 }
 
 .contact-form ::-webkit-input-placeholder {
@@ -1320,6 +1336,12 @@ footer {
   padding: 60px 0px;
 }
 
+footer p{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
 footer .social {
   overflow: hidden;
   text-align: right;
@@ -1452,4 +1474,82 @@ preloader
   100% {
     opacity: 0;
   }
+}
+
+/*addition*/
+.service-item h2 {
+  z-index: 9;
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  font-size: 100px;
+  font-weight: 600;
+  color: #cce9ff; /**#e8eef5*/
+}
+
+#contact-us .right-content{
+  color: #fff;
+}
+
+#contact-us .right-content h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#contact-us .right-content h2 em {
+  font-style: normal;
+  color: #00b4c6;
+}
+
+#contact-us .right-content p {
+  color: #FFF;
+}
+
+#contact-us .right-content a {
+  color: #FFF;
+}
+
+#contact-us .right-content a:hover {
+  color: #00b4c6;
+}
+
+#contact-us .social {
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+#contact-us .social li:first-child {
+  margin-left: 0px;
+}
+
+#contact-us .social li {
+  margin: 0px 7.5px;
+  display: inline-block;
+}
+
+#contact-us .social li a {
+  color: #fff;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+#contact-us .social li a:hover {
+  background-color: #00b4c6;
+  border-color: #00b4c6;
+  color: #fff;
 }
