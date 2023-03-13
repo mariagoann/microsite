@@ -101,6 +101,7 @@ figcaption {
   outline: 0;
 }
 
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -279,6 +280,15 @@ button.main-button:hover {
   font-weight: 300;
   color: #232323;
   margin-bottom: 20px;
+}
+
+.section-heading h4 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+  color: #232323;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .section-heading p {
@@ -750,8 +760,10 @@ TRY IT ... with or without CENTER CENTER
   font-size: 50px; /*64*/
   line-height: 50px; /*80*/
   letter-spacing: 1px; /*1.4*/
-  margin-bottom: 25px; /*30*/
+  margin-bottom: 15px; /*30*/
   color: #fff;
+  margin-top: 350px;
+  text-align: center;
 }
 
 .welcome-area .header-text p {
@@ -812,11 +824,26 @@ TRY IT ... with or without CENTER CENTER
     display: none;
   }
   .welcome-area .header-text h1 {
-    font-weight: 600;
+    /* font-weight: 600;
     font-size: 24px !important;
     line-height: 30px !important;
+    margin-bottom: 15px !important;
+    margin-top: 15px !important; */
+
+    font-size: 24px !important;
+    line-height: 15px !important;
+    color: #fff;
+    margin-top: 200px;
+    text-align: center;
+  }
+
+  .welcome-area .header-text h2 {
+    font-weight: 600;
+    font-size: 18px !important;
+    line-height: 20px !important;
     margin-bottom: 20px !important;
   }
+
   .welcome-area .header-text h1 span {
     color: #fff;
   }
@@ -828,8 +855,8 @@ TRY IT ... with or without CENTER CENTER
     margin-bottom: 40px;
   }
   .welcome-area .header-text img {
-    width: 80%;
-    margin-top: 20px;
+    width: 30%; /*80%*/
+    margin-top: 90px; /*20px */
   }
 }
 
@@ -846,7 +873,7 @@ about
 
 @media (max-width: 765px) {
   #about {
-    padding: 20px 0px 120px 0px;
+    padding: 20px 0px 0px 0px;
   }
 }
 
@@ -917,7 +944,7 @@ services
 */
 #services {
   position: relative;
-  padding: 60px 0px 60px 0px; /* 120px 0px 90px 0px*/
+  padding: 60px 0px 0px 0px; /* 120px 0px 90px 0px*/
   /*background: rgba(0, 136, 232, 1);
   background: -moz-linear-gradient(
     -45deg,
@@ -1013,11 +1040,19 @@ services
 
 .service-item .service-title {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   color: #1e1e1e;
   letter-spacing: 0.7px;
-  margin-bottom: 15px;
   position: relative;
+  z-index: 2;
+}
+
+.service-item #sp{
+  font-weight: 500;
+  font-size: 13px;
+  color: #eee;
+  position: relative;
+  letter-spacing: 1px;
   z-index: 2;
 }
 
@@ -1029,10 +1064,11 @@ services
   line-height: 25px;
   position: relative;
   z-index: 2;
+  margin-top: 25px;
 }
 
 .service-item a.main-button {
-  margin-top: 30px;
+  margin-top: 15px;
   display: inline-block;
 }
 
@@ -1489,12 +1525,13 @@ preloader
 
 #contact-us .right-content{
   color: #fff;
+  text-align: center;
 }
 
 #contact-us .right-content h2 {
   margin-top: 0px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 20px;
   text-transform: capitalize;
   font-weight: 700;
   letter-spacing: 1px;
@@ -1553,3 +1590,111 @@ preloader
   border-color: #00b4c6;
   color: #fff;
 }
+
+#counter {
+  position: relative;
+  padding: 60px 0px 60px 0px; /* 120px 0px 90px 0px*/
+  background: rgba(0, 136, 232, 1);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(0, 136, 232, 1) 0%,
+    rgba(0, 182, 198, 1) 0%,
+    rgba(0, 136, 232, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(0%, rgba(0, 136, 232, 1)),
+    color-stop(0%, rgba(0, 182, 198, 1)),
+    color-stop(100%, rgba(0, 136, 232, 1))
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(0, 136, 232, 1) 0%,
+    rgba(0, 182, 198, 1) 0%,
+    rgba(0, 136, 232, 1) 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(0, 136, 232, 1) 0%,
+    rgba(0, 182, 198, 1) 0%,
+    rgba(0, 136, 232, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    rgba(0, 136, 232, 1) 0%,
+    rgba(0, 182, 198, 1) 0%,
+    rgba(0, 136, 232, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(0, 136, 232, 1) 0%,
+    rgba(0, 182, 198, 1) 0%,
+    rgba(0, 136, 232, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088e8', endColorstr='#0088e8', GradientType=1 );
+}
+#schedule {
+  position: relative;
+  padding: 0px 0px 60px 0px;
+}
+
+
+
+.service-item .counterimg {
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100%; 
+  height: 100%;
+  margin: auto;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.service-item .counterimg img{
+  display: block;
+  height: 225px;
+  max-height: auto;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 3%;
+  position: relative; 
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  /* background-color: #b61924; */
+  background-image: url('');
+  background-size: cover;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.header-text .logo {
+  position: absolute;
+  max-width: 180px;
+  width: 100%;
+  max-height: 280px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-top: 225px;
+}
+
+/* .welcome-area .header-text .judul {
+  font-weight: 400;
+  font-size: 50px; 
+  line-height: 50px; 
+  letter-spacing: 1px; 
+  margin-bottom: 25px; 
+  color: #fff;
+  margin-top: 350px;
+  text-align: center;
+} */
+
+
